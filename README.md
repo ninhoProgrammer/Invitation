@@ -1,48 +1,57 @@
-# Astro Starter Kit: Basics
 
-```sh
-npm create astro@latest -- --template basics
-```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+# Astro Web Invitation - Astro Project
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+This project is an interactive web invitation built with [Astro](https://astro.build/). It features animations, background music, a countdown timer, and custom sections for special events.
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
+```
 /
 ├── public/
-│   └── favicon.svg
+│   ├── images and media assets (webp, svg, mp3, weba)
 ├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── assets/         # Images and SVGs used in the site
+│   ├── components/     # Reusable components (AnimacionScroll, Banner, Footer, Header, Hero, Iglesia, Loading, Makeweb, Salon, Timer)
+│   ├── layouts/        # Main site layout
+│   ├── pages/          # Main page (index.astro)
+│   ├── scripts/        # JS scripts (audio-controller.js)
+│   └── styles/         # CSS stylesheets
+├── package.json        # npm dependencies and scripts
+├── astro.config.mjs    # Astro configuration
+├── tsconfig.json       # TypeScript configuration
+└── README.md           # Project documentation
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## ✨ Features
+
+- Scroll and loading animations
+- Countdown timer for the event
+- Background audio player
+- Custom sections: Church, Hall, Banner, Hero, Footer, Header
+- Responsive and modern design
 
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+Run these commands from the project root:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Command           | Action                                              |
+|-------------------|-----------------------------------------------------|
+| `npm install`     | Install dependencies                                |
+| `npm run dev`     | Start development server (`localhost:4321`)         |
+| `npm run build`   | Build the site for production (`./dist/`)           |
+| `npm run preview` | Preview the built site locally                      |
 
-## 👀 Want to learn more?
+## 📦 Requirements
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Node.js 18+
+- npm
+
+## 👀 More Information
+
+- [Astro Documentation](https://docs.astro.build)
+- [Astro Discord](https://astro.build/chat)
+
+## 📝 License
+
+This project is licensed under the terms of the MIT License. See the [MIT License](LICENSE)
