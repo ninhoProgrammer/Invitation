@@ -1,0 +1,29 @@
+.scroll-in-view {
+  transition: transform 0.8s ease, opacity 0.8s ease;
+ 
+}
+
+.off-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.off-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.off-top {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.off-bottom {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.in-view {
+  transform: translate(0, 0);
+  opacity: 1;
+}

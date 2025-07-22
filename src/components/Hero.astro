@@ -1,0 +1,64 @@
+---
+import AnimacionScroll from '../components/AnimacionScroll.jsx';
+---
+
+<div class="flex flex-col bg-[url('../background.webp')] md:bg-[url('../bg.webp')] bg-center bg-no-repeat bg-contain overflow-hidden h-screen w-screen">
+    <AnimacionScroll client:visible direction="bottom">
+        <div class="flex flex-col w-full mb-8 items-center justify-center text-center p-4 md:p-8">
+            <h1 class="text-3xl md:text-6xl font-bold mb-2">¡Bienvenido a mi fiesta!</h1>
+            <p class="text-xs md:text-lg">¡Estoy emocionado de celebrar este día especial contigo!</p>
+        </div>
+    </AnimacionScroll>
+
+    <AnimacionScroll client:visible direction="top">
+        <div class=" items-start justify-start md:items-center md:justify-center mt-[360px]">
+            <img src="../car.webp" alt="CAR" class="-right-10 md:right-96 h-72 md:h-96 w-auto -mt-72" />
+        </div>
+    </AnimacionScroll>
+
+    <AnimacionScroll client:visible direction="bottom">
+        <div class="relative items-center justify-center text-center -mt-3 text-black">
+            
+            <div class="relative bg-[url('../fondo.webp')] bg-center bg-no-repeat bg-contain w-full h-auto items-center text-center text-5xl md:text-8xl">
+                <h1 class="font-bold">Sebastian</h1>
+                <h2 class="text-2xl md:text-4xl font-bold mb-4 leading-tight ">
+                    17 de agosto del 2025 
+                </h2>
+            </div>
+            
+            
+        </div>  
+    </AnimacionScroll> 
+</div>
+
+<style>
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .animate-fade-in {
+        animation: fade-in 1s ease-out;
+    }
+
+    @keyframes scale-in {
+                from {
+                    transform: scale(0);
+                    opacity: 0;
+                }
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+            .animate-scale-in {
+                animation: scale-in 0.8s ease-out;
+            }
+</style>
+
+

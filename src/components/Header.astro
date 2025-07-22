@@ -1,0 +1,24 @@
+<header id="main-header" class="flex flex-grow bg-opacity-15 fixed top-0 justify-between z-40 ">
+   
+    <audio id="myAudio" loop autoplay>
+		<source src="../track2.mp3" type="audio/mpeg">
+		Tu navegador no soporta audio.
+	</audio>
+	<button id="playPauseBtn">🔇</button>
+</header>
+
+<script type="text/javascript">
+    const audio = document.getElementById("myAudio");
+    const playPauseBtn = document.getElementById("playPauseBtn");
+
+    playPauseBtn.addEventListener("click", function() {
+        if (audio.paused) {
+            audio.play();
+            playPauseBtn.textContent = "🔊";
+        } else {
+            audio.pause();
+            playPauseBtn.textContent = "🔇";
+        }
+    });
+</script>
+

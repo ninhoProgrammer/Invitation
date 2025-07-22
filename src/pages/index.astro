@@ -1,0 +1,49 @@
+---
+import Loading from '../components/Loading.jsx';
+import Hero from '../components/Hero.astro';
+import Layout from '../layouts/Layout.astro';
+import Iglesia from '../components/Iglesia.astro';
+import Salon from '../components/Salon.astro';
+import Makeweb from '../components/Makeweb.astro';
+import Footer from '../components/Footer.astro';
+import Timer from '../components/Timer.jsx';
+import Banner from '../components/Banner.astro';
+// Importante: el componente Loading debe ser cargado en el cliente
+// Puedes controlar el loader con un pequeño estado en JS
+---
+
+<Layout>
+	<Loading client:only="react">
+		<section class="overflow-hidden items-center justify-center h-screen w-screen">
+			<Hero />
+		</section>
+		
+		<section class="overflow-hidden flex flex-col items-center justify-center w-screen h-80 ">
+			<Iglesia />
+		</section>
+
+		<section class="overflow-hidden flex flex-col items-center justify-center w-screen h-80 ">
+			<Salon />
+		</section>
+
+		<section class="flex flex-col items-center justify-center w-screen h-80">
+			<Timer client:visible/>
+		</section>
+
+		<section class="flex flex-col items-center justify-center w-screen">
+			<Banner />
+		</section>
+
+		<section class="flex flex-col items-center justify-center w-screen">
+			<Footer />
+		</section>
+		
+		<section class="flex flex-col items-center justify-center w-screen">
+			<Banner />
+		</section>
+
+		<section class="items-center justify-center w-screen">
+			<Makeweb />
+		</section>
+	</Loading-->
+</Layout>

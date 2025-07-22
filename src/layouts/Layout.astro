@@ -1,0 +1,36 @@
+---
+import { Analytics } from '@vercel/analytics/react';
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="../MakeWeb_MM.svg" />
+		<link href="https://fonts.cdnfonts.com/css/tempting" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>Mi Boda F y A</title>
+	</head>
+	
+	<body class="bg-fixed bg-[url('../background2.webp')] bg-cover bg-center  text-white ">
+		<Header />
+		<slot />
+		<Analytics />
+	</body>
+
+</html>
+
+
+<style is:global>
+    html {
+		font-family: 'Kidprint', sans-serif;
+  		font-optical-sizing: auto;
+  		font-weight: <weight>;
+  		font-style: normal;
+
+	}
+</style>
+
