@@ -31,7 +31,7 @@ export default function LoadingInvite({ children }) {
             </div>
 
             {!explode && (
-                <button id="playPauseBtn" onClick={handleStart} className="z-10 mt-12 px-6 py-1 text-white bg-red-500 font-serif rounded-full animate-blue-glow hover:scale-105 transition-all duration-300">
+                <button id="playPauseBtn" onClick={handleStart} className="z-10 mt-12 px-3 border-2 border-white text-white bg-blue-900 font-serif rounded-full animate-blue-glow hover:scale-105 transition-all duration-300">
                     <img src="/hot.webp" alt="" className='w-48 h-auto' />
                 </button>
             )}

@@ -33,8 +33,8 @@ export default function CountdownTimer() {
   return (
     <div className="text-center my-8 p-10 mb-24 md:mb-0">
       <AnimacionScroll direction="bottom">
-        <h1 className="text-4xl md:text-8xl font-bold text-center pt-10">
-          Faltan
+        <h1 className="text-2xl md:text-8xl font-bold text-center pt-10">
+          FALTAN:
         </h1>
       </AnimacionScroll>
       <AnimacionScroll direction="top">
